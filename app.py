@@ -1061,6 +1061,6 @@ def train_automl(n_clicks, time_left_for_task, per_run_time_limit):
 
 # Run the app on a specified port
 if __name__ == "__main__":
-    app.run_server(port=8080)
+    app.run_server(host="0.0.0.0", port=8080)
 
 
