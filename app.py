@@ -23,7 +23,7 @@ from optuna.integration import OptunaSearchCV
 
 # Oracle SQL connection details
 user = "A68699"
-pw = "Ta9263J8"
+pw = "Cvd.99501743"
 dsn = cx_Oracle.makedsn(host='ddm_edw.finansbank.com.tr', port=9522, service_name='enduser')
 
 # Initialize the Dash app
