@@ -360,7 +360,7 @@ def load_datasets(n_clicks, train_query, test_query, target_column):
             Columns_Names_List = [desc[0] for desc in cursor.description]
             
             # Fetch data in chunks
-            batch_size = 1000
+            batch_size = 5000
             all_chunks = []
 
             while True:
