@@ -394,7 +394,7 @@ def load_datasets(n_clicks, train_query, test_query, target_column):
                 # Convert rows to DataFrame
                 df_chunk_test = pd.DataFrame(rows_test, columns=Columns_Names_List)
                 # Downcast numeric data
-                df_chunk_test = downcast_dtypes(df_chunk_test)
+                # df_chunk_test = downcast_dtypes(df_chunk_test)
                 all_chunks_test.append(df_chunk_test)
             
             df_test = pd.concat(all_chunks_test,ignore_index=True)
