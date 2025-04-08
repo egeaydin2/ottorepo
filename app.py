@@ -351,7 +351,9 @@ def load_datasets(n_clicks, train_query, test_query, target_column):
 
     if n_clicks:
         try:
+            print("Connecting to Oracle DB...")
             connection = cx_Oracle.connect(user, pw, dsn)
+            print("Connected.")
             
             # Load train dataset
             cursor = connection.cursor()
