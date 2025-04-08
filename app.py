@@ -370,7 +370,7 @@ def load_datasets(n_clicks, train_query, test_query, target_column):
                 # Convert rows to DataFrame
                 df_chunk = pd.DataFrame(rows, columns=Columns_Names_List)
                 # Downcast numeric data
-                df_chunk = downcast_dtypes(df_chunk)
+                # df_chunk = downcast_dtypes(df_chunk)
                 all_chunks.append(df_chunk)
 
             # Concatenate all chunks
